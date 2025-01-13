@@ -18,6 +18,9 @@ def Parameters(args, learn_hist=True, learn_edge_kernels=True, feature_init=True
     # Always add slash (/) after folder name
     folder = args.folder
 
+    # Parameter to choose Intermediate and Base models. Possible combinaitions are
+    # For Statistical vs Structural: nehd-linear, ehd-linear, histogram-linear, None-linear
+    # For NEHD as a Feature Extractor: nehd-linear, nehd-resnet50, nehd-pann, nehd-vit, nehd-ast
     intermediate_features = {"1" : "nehd", "2": "ehd", "3": "histogram", "4": None}
 
     base_models = {"1" : "linear", "2": "resnet50", "3": "pann", "4": "vit", "5": "ast"}
