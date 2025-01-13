@@ -1,33 +1,91 @@
-# Datasets Directory
+# Downloading dataset:
 
-This directory contains subdirectories for storing various datasets used in the project.
+Note: Due to the size of the datasets, the audio files were not 
+uploaded to the repository. For the HLTDNN paper, DeepShip dataset was used. 
+Please follow the following instructions
+to ensure the code works. If the dataset is used,
+please cite the appropiate source (paper, repository, etc.) as mentioned
+on the webpage and provided here.
 
-## Included Datasets:
+##  DeepShip
 
-### 1. FashionMNIST Dataset
+Please download the [`DeepShip dataset`](https://github.com/irfankamboh/DeepShip/issues/1)
+and follow these instructions:
 
-- **Description:** FashionMNIST is a dataset of Zalando's article images, consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes.
-- **Download:** You can download the FashionMNIST dataset from [here](https://github.com/zalandoresearch/fashion-mnist#get-the-data).
-- **Usage:** After downloading, extract the dataset and place it in the 'FashionMNIST' subdirectory.
+1. Create a folder called `Deepship`
+2. Download the signals for each class in the `Deepship` folder:
+        [`Cargo`](https://drive.google.com/drive/folders/1YyzrgY2tfFwtch3oTS29XUvKtEnsTgbw)
+        [`Passengership`](https://drive.google.com/drive/folders/1aLn-XVaPYP8-RUzpS2SBDkGuNTWKtiNi)
+        [`Tanker`](https://drive.google.com/drive/folders/1d-MrUfb8fPX8EmZIfVO5oBetVTxXfyOA)
+        [`Tug`](https://drive.google.com/drive/folders/1b_gNLNammWm1HsRa3muLryccHQEAHDnT)
+3. The structure of the `Deepship` folder is as follows:
+```
+Deepship/
+    ├── Cargo/
+    │   ├── Cargo1/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   ├── Cargo2/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   └── ...
+    ├── Passenger/
+    │   ├── Passenger1/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   ├── Passenger2/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   └── ...
+    ├── Tanker/
+    │   ├── Tanker1/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   ├── Tanker2/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   └── ...
+    ├── Tug/
+    │   ├── Tug1/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   ├── Tug2/
+    │   │   ├── audio1.wav
+    │   │   ├── audio2.wav
+    │   │   └── ...
+    │   └── ...
+    └── ...
+```
 
-### 2. CIFAR10 Dataset
+4. The dataset structure after segmentation is shown in the figure below, along with the number of segments in each class.      
 
-- **Description:** CIFAR10 is a dataset of 60,000 32x32 color images in 10 classes, with 6,000 images per class. There are 50,000 training images and 10,000 test images.
-- **Download:** You can download the CIFAR10 dataset from [here](https://www.cs.toronto.edu/~kriz/cifar.html).
-- **Usage:** After downloading, extract the dataset and place it in the 'CIFAR10' subdirectory.
+[Note: The number of files for Cargo, Passengership, Tanker, and Tug is 109,191, 240, and 69, respectively after downloading from Google Drive.]
+![Paper Figures](https://github.com/Peeples-Lab/HLTDNN/blob/master/Figures/Dataset.png)
+## <a name="CitingDeepShip"></a>Citing DeepShip
 
-### 3. sugarcane_damage_usa Dataset
+If you use the DeepShip dataset, please cite the following reference using the following entry.
 
-- **Description:** sugarcane_damage_usa is a dataset of sugarcane damage images collected in the USA. It consists of images categorized into multiple damage types related to sugarcane.
-- **Download:** Please refer to the source from where you obtained the sugarcane_damage_usa dataset for download instructions.
-- **Usage:** After downloading, extract the dataset and place it in the 'sugarcane_damage_usa' subdirectory.
+**Plain Text:**
 
-## Adding Custom Datasets:
+Irfan, M., Jiangbin, Z., Ali, S., Iqbal, M., Masood, Z., & Hamid, U. (2021). DeepShip: An underwater acoustic benchmark dataset and a separable convolution based autoencoder for classification. Expert Systems with Applications, 183, 115270.
 
-If you have a custom dataset that does not have an inbuilt index like the ones provided, follow these steps to add it:
+**BibTex:**
+```
+@article{irfan2021deepship,
+  title={DeepShip: An underwater acoustic benchmark dataset and a separable convolution based autoencoder for classification},
+  author={Irfan, Muhammad and Jiangbin, Zheng and Ali, Shahid and Iqbal, Muhammad and Masood, Zafar and Hamid, Umar},
+  journal={Expert Systems with Applications},
+  volume={183},
+  pages={115270},
+  year={2021},
+  publisher={Elsevier}
+}
 
-1. Create a Python class definition for your dataset, similar to the ones provided in the DataModules directory.
-2. Save the dataset class definition file in the respective dataset directory.
-3. Modify the DataModules.py file to include your custom dataset class and its corresponding DataModule.
-
-For any issues or questions regarding the datasets, please refer to the respective sources or documentation.
+```
