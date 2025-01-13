@@ -9,12 +9,12 @@
 Atharva Girish Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples
 
 Note: If this code is used, cite it:  TBD (Authors). (202X, Month Day). TBD: Initial Release (Version v1.0).
-Zendo. https://doi.org/10.5281/zenodo.14593898.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14593898.svg)](https://doi.org/10.5281/zenodo.14593898)
+Zendo. https://doi.org/10.5281/zenodo.14637643.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14637643.svg)](https://doi.org/10.5281/zenodo.14637643)
 
-[`arXiv`](https://arxiv.org/abs/2307.13788)
+<!-- [`arXiv`](https://arxiv.org/abs/2307.13788)
 
-[`BibTeX`](#CitingHist)
+[`BibTeX`](#CitingHist) -->
 
 
 
