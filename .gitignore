@@ -1,0 +1,22 @@
+# Ignore saved model
+Saved_Models/
+aggregated_results.json
+Confusion_Matrices/
+
+# Ignore the venv
+venv/
+
+# Ignore the logs
+lightning_logs/
+Datasets/DeepShip/
+#Ignore Datasets
+*.zip
+*.pyc
+
+Results/
+
+Feature_Maps/
+debug/
+Saved_Models*/
+pretrained_models/
+launch.json
