@@ -9,12 +9,12 @@
 Atharva Girish Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples
 
 Note: If this code is used, cite it:  TBD (Authors). (202X, Month Day). TBD: Initial Release (Version v1.0).
-Zendo. https://doi.org/10.5281/zenodo.14593898.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14593898.svg)](https://doi.org/10.5281/zenodo.14593898)
+Zendo. https://doi.org/10.5281/zenodo.14637643.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14637643.svg)](https://doi.org/10.5281/zenodo.14637643)
 
-[`arXiv`](https://arxiv.org/abs/2307.13788)
+<!-- [`arXiv`](https://arxiv.org/abs/2307.13788)
 
-[`BibTeX`](#CitingHist)
+[`BibTeX`](#CitingHist) -->
 
 
 
@@ -33,7 +33,7 @@ The [`requirements.txt`](requirements.txt) file includes all the necessary packa
 To get started, please follow the instructions in the [Datasets](Datasets) folder to download the dataset.
 Next, run [`demo.py`](demo.py) in Python IDE (e.g., Spyder) or command line to train, validate, and test models. 
 To evaluate performance,
-run [`View_Results.py`](View_Results.py) (if results are saved out).
+run [`View_Results.py`](view_results.py) (if results are saved out).
 
 
 ## Main Functions
