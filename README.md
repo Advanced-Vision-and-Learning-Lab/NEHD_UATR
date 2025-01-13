@@ -92,7 +92,6 @@ https://github.com/Peeples-Lab/HLTDNN
         ├── Network_functions.py          // Contains functions to initialize feature extractor and various models
         ├── pytorchtools.py               // Implement early stopping to terminate training based on validation metrics.
         └── Save_Results.py               // Save results from the demo script.
-        └── Feature_Extraction_Layer.py   // Extract and transform different features from the audio files.
 
 
 
