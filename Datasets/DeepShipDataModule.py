@@ -93,21 +93,6 @@ class DeepShipSegments(Dataset):
     
 
     def __getitem__(self, idx):
-        # Choose the right index based on the dataset's partition setting
-        #if self.partition == 'train':
-        #    actual_idx = self.train_indices[idx % len(self.train_indices)]  
-        #elif self.partition == 'val':
-        #    actual_idx = self.val_indices[idx % len(self.val_indices)]  
-        #else:
-        #    raise ValueError("Invalid partition type. Use 'train' or 'val'.")
-
-        # file_path, label = self.segment_lists[self.partition][idx]
-        # signal, sr = torchaudio.load(file_path, normalize = True)
-        # label = torch.tensor(label)
-        # if self.target_transform:
-        #     label = self.target_transform(label)
-
-        # return signal, label, idx
     
         file_path, label = self.segment_lists[self.partition][idx]    
         try:

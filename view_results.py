@@ -51,7 +51,6 @@ def main(args):
 
     Network_parameters["num_classes"] = Network_parameters["num_classes"][Dataset]
     label_names = Network_parameters['class_names']
-    phases = args.phases
 
     # for split in range(0, num_runs):
     for split in range(0, num_runs):
@@ -226,6 +225,12 @@ def parse_args():
         default=False,
         action=argparse.BooleanOptionalAction,
         help="Flag to run on HPRC (default: False)",
+    )
+    parser.add_argument(
+        "--num_epochs",
+        type=int,
+        default=50,
+        help="Number of epochs to train each model for (default: 50)",
     )
     parser.add_argument(
         "--patience",

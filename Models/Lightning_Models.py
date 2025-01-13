@@ -64,12 +64,6 @@ class Histogram_Lightning(L.LightningModule):
     def __init__(self, model, epochs, num_bins, filename):
         super().__init__()
         self.save_hyperparameters(ignore=['model'])
-        # return HistogramLayer(in_channels=network_parameters['in_channels'],
-        #         kernel_size= network_parameters['window_size'],
-        #         num_bins=network_parameters['num_bins'],
-        #         stride=network_parameters['stride'],
-        #         normalize_count=True,
-        #         normalize_bins=True)
         self.model = model
         self.num_bins = num_bins
         self.filename = filename
@@ -147,8 +141,6 @@ class Custom_TIMM_Model(L.LightningModule):
             pad_right = pad_width_total - pad_left
             features = F.pad(features, (pad_left, pad_right, pad_top, pad_bottom), mode='constant', value=0)  # You can change the mode to 'constant', 'reflect', 'replicate', etc.
 
-            # features = F.interpolate(features, size=(target_height,target_width), mode='bilinear', align_corners=False)
-
         outputs = self.model(features)
         return outputs
 
@@ -218,40 +210,6 @@ def download_weights(url, destination):
         print("Download complete.\n")
     else:
         print(f"Weights already exist at {destination}.\n")
-
-
-# class StatStructModel(nn.Module):
-#     def __init__(self,model,num_ftrs,num_classes,is_intermediate=False):
-
-#         super(StatStructModel,self).__init__()
-#         self.num_ftrs = num_ftrs
-#         self.num_classes = num_classes
-#         self.is_intermediate = is_intermediate
-#         #Define neural feature
-#         self.model = model
-        
-#         if is_intermediate:
-#             self.fc = torch.nn.Sequential()
-#             self.padding=(17, 17, 2, 2)
-#         else:
-#             self.fc = nn.Linear(num_ftrs, num_classes)
-        
-        
-#     def forward(self,x):
-#         # Preprocess
-#         # [128,1,28,28]
-#         #Extract features from histogram layer and pass to fully connected layer
-#         # print(x.shape)
-#         if self.model:
-#             x = self.model(x)
-#         #if reconstructon experiments, do not flatten tensor
-#         #else classification, flatten tensor
-#         if self.is_intermediate:
-#             output = F.pad(x, self.padding, mode='constant', value=0)
-#         else:
-#             x = torch.flatten(x,start_dim=1)
-#             output = self.fc(x)
-#         return output
     
 class LinearNetwork(L.LightningModule):
     def __init__(self,num_ftrs,num_classes):
@@ -294,10 +252,7 @@ class AST(L.LightningModule):
     def forward(self, x):
         if self.num_input_features > 1:
             x = self.conv1x1(x)
-        # print("Before Conv:",outputs.shape)
         output_size = (212, 40)
-        # print(features.shape)
-        # Perform interpolation to resize the tensor
         x = F.interpolate(x, size=output_size, mode='bilinear', align_corners=False)
         x = x.squeeze(1)
         hidden_states = self.model(x)[0]

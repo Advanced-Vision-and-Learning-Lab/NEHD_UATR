@@ -63,14 +63,6 @@ class Lightning_Wrapper(L.LightningModule):
             task=task, num_classes=self.num_classes)
         self.val_accuracy = torchmetrics.classification.Accuracy(
             task=task, num_classes=self.num_classes)
-        # self.val_f1 = torchmetrics.F1Score(task=task, num_classes=self.num_classes, average=average)
-        # self.val_precision = torchmetrics.Precision(task=task, num_classes=self.num_classes, average=average)
-        # self.val_recall = torchmetrics.Recall(task=task, num_classes=self.num_classes, average=average)
-
-        # self.test_accuracy = torchmetrics.classification.Accuracy(task=task, num_classes=self.num_classes)
-        # self.test_f1 = torchmetrics.F1Score(task=task, num_classes=self.num_classes, average=average)
-        # self.test_precision = torchmetrics.Precision(task=task, num_classes=self.num_classes, average=average)
-        # self.test_recall = torchmetrics.Recall(task=task, num_classes=self.num_classes, average=average)
 
         self.val_preds = []
         self.val_labels = []
