@@ -33,7 +33,7 @@ The [`requirements.txt`](requirements.txt) file includes all the necessary packa
 To get started, please follow the instructions in the [Datasets](Datasets) folder to download the dataset.
 Next, run [`demo.py`](demo.py) in Python IDE (e.g., Spyder) or command line to train, validate, and test models. 
 To evaluate performance,
-run [`View_Results.py`](View_Results.py) (if results are saved out).
+run [`View_Results.py`](view_results.py) (if results are saved out).
 
 
 ## Main Functions
