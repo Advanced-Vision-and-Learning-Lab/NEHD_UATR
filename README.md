@@ -102,18 +102,13 @@ https://github.com/Peeples-Lab/HLTDNN
 
 This source code is licensed under the license found in the [`LICENSE`](LICENSE) file in the root directory of this source tree.
 
-This product is Copyright (c) 202X TBD. All rights reserved.
+This product is Copyright (c) 2025 TBD. All rights reserved.
 
 ## <a name="CitingHist"></a>Citing NEHD_UATR
 
-If you use the NEHD_UATR code, please cite the following reference using the following entry.
+If you use the NEHD_UATR code, please cite:
 
-**Plain Text:**
+**Neural Edge Histogram Descriptors for Underwater Acoustic Target Recognition**
+Atharva Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples
+Available on [arXiv](https://arxiv.org/abs/2503.13763).
 
-TBD
-
-**BibTex:**
-
-```
-TBD
-```
