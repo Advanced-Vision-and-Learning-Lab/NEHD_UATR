@@ -8,9 +8,7 @@
 
 Atharva Girish Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples
 
-Note: If this code is used, cite it:  TBD (Authors). (202X, Month Day). TBD: Initial Release (Version v1.0).
-Zendo. https://doi.org/10.5281/zenodo.14637643.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14637643.svg)](https://doi.org/10.5281/zenodo.14637643)
+Note: If this code is used, cite it:  Atharva Girish Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples. (2025, March 24) Peeples-Lab/NEHD_UATR: Initial Release (Version v1.0).
 
 <!-- [`arXiv`](https://arxiv.org/abs/2307.13788)
 
@@ -109,6 +107,7 @@ This product is Copyright (c) 2025 TBD. All rights reserved.
 If you use the NEHD_UATR code, please cite:
 
 **Neural Edge Histogram Descriptors for Underwater Acoustic Target Recognition**
+
 Atharva Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples
 Available on [arXiv](https://arxiv.org/abs/2503.13763).
 
