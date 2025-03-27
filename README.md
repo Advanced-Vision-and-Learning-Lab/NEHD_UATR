@@ -106,8 +106,22 @@ This product is Copyright (c) 2025 TBD. All rights reserved.
 
 If you use the NEHD_UATR code, please cite:
 
-**Neural Edge Histogram Descriptors for Underwater Acoustic Target Recognition**
+**Plain Text:**
 
-Atharva Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples
+Atharva Agashe, Davelle Carreiro, Alexandra Van Dine, Joshua Peeples. "Neural Edge Histogram Descriptors for Underwater Acoustic Target Recognition." (2025).
+
 Available on [arXiv](https://arxiv.org/abs/2503.13763).
+
+**BibTex:**
+```
+@misc{agashe2025neuraledgehistogramdescriptors,
+      title={Neural Edge Histogram Descriptors for Underwater Acoustic Target Recognition}, 
+      author={Atharva Agashe and Davelle Carreiro and Alexandra Van Dine and Joshua Peeples},
+      year={2025},
+      eprint={2503.13763},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2503.13763}, 
+}
+```
 
