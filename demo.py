@@ -40,9 +40,7 @@ def main(args):
 
     # Set initial parameters
     Network_parameters = Parameters(args)
-    print(
-        f"Starting Experiments for {Network_parameters["intermediate_feature"]} + {Network_parameters["base_model"]}"
-    )
+    print(f"Starting Experiments for {Network_parameters['intermediate_feature']} + {Network_parameters['base_model']}")
     # Name of dataset
     Dataset = Network_parameters["Dataset"]
 
